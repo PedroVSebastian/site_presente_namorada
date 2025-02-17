@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+:root{
+    --font-menu:"Dancing Script", serif;
+    --font-titulo:"Carattere", serif;
+    --font-paragrafo:"EB Garamond", serif;
+
+    --cor-fundo-menu:rgb(250, 187, 162);
+    --cor-texto-menu:brown;
+    --cor-background-body:rgb(255, 232, 224);
+    --cor-sublinhado-texto:rgb(250, 154, 117);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu__topo{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: var(--cor-fundo-menu);
+    padding: 2%;
+    padding-right: 8%;
+    height: auto;
+}
+.botao__menu{
+    font-family: var(--font-menu);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--cor-texto-menu);
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: var(--cor-background-body);
+}
+.conteudo__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3%;
+    gap: 2rem;
+}
+.conteudo__fotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    width: 80%;
+    gap: 2rem;
+}
+.conteudo__texto__titulo{
+    text-align: center;
+    font-family:var(--font-titulo) ;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+.conteudo__texto__paragrafo{
+    font-family: var(--font-paragrafo);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    width: 70%;
+    text-align: center;
+}
+.foto__descricao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    padding-bottom: 3rem;
+}
+.imagem__com__descricao{
+    width: 80%;
+}
+.conteudo__imagem{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    padding-bottom: 2%;
+}
+.conteudo__imagem__coluna{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap:2rem;
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 3%;
+    background-color: var(--cor-fundo-menu);
+    height: auto;
+}
+.texto__rodape{
+    font-family: var(--font-titulo);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    background-color:var(--cor-sublinhado-texto);
+}
+@media (max-width:1200px){
+    .menu__topo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        background-color: var(--cor-fundo-menu);
+        padding: 2%;
+    }
+    .conteudo__imagem__coluna{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap:2rem;
+    }
+    .conteudo__texto__paragrafo{
+        font-family: var(--font-paragrafo);
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5rem;
+        width: 90%;
+        text-align: center;
+    }
+    .conteudo__imagem{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        gap:2rem;
+        padding-bottom: 5%;
+    }
+    .conteudo__fotos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+        width: 80%;
+        gap: 2rem;
+    }
+}
